@@ -1,0 +1,8 @@
+npm install -g aws-cdk
+cdk --version
+cd C:\codingx\cdk4todos
+cdk init app --language=java
+update cdk.json file and modify first line to below line (replace mvn with ./mvnw - to download and install mvn if note available)
+new line looks like---> "app": "./mvnw -e -q compile exec:java",
+
+cdk bootstrap aws://ACCOUNT-NUMBER/REGION ( replace with your aws details)

@@ -1,0 +1,3 @@
+pip install localstack
+
+docker run -p 4566:4566 -e SERVICES=s3 localstack/localstack:0.14.4

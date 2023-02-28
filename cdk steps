@@ -6,3 +6,13 @@ update cdk.json file and modify first line to below line (replace mvn with ./mvn
 new line looks like---> "app": "./mvnw -e -q compile exec:java",
 
 cdk bootstrap aws://ACCOUNT-NUMBER/REGION ( replace with your aws details)
+
+Add stack specific java classes
+Add json context
+Add package.json
+
+Run following commands as per requirement
+
+npm run repository:deplopy
+npm run network:deploy
+npm run service:deploy

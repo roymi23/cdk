@@ -1,0 +1,9 @@
+Stack name must match the regular expression: /^[A-Za-z][A-Za-z0-9-]*$/, got 'phcidentity.DockerRepository'
+Error: Stack name must match the regular expression: /^[A-Za-z][A-Za-z0-9-]*$/, got 'phcidentity.DockerRepository'
+    at new Stack (C:\Users\royma\AppData\Local\Temp\jsii-kernel-ImKsX1\node_modules\aws-cdk-lib\core\lib\stack.js:1:2686)
+    at Kernel._create (C:\Users\royma\AppData\Local\Temp\jsii-java-runtime17099667170327654791\lib\program.js:9937:29)
+    at Kernel.create (C:\Users\royma\AppData\Local\Temp\jsii-java-runtime17099667170327654791\lib\program.js:9666:29)
+    at KernelHost.processRequest (C:\Users\royma\AppData\Local\Temp\jsii-java-runtime17099667170327654791\lib\program.js:11514:36)
+    at KernelHost.run (C:\Users\royma\AppData\Local\Temp\jsii-java-runtime17099667170327654791\lib\program.js:11474:22)
+    at Immediate._onImmediate (C:\Users\royma\AppData\Local\Temp\jsii-java-runtime17099667170327654791\lib\program.js:11475:46)
+    at processImmediate (node:internal/timers:466:21)

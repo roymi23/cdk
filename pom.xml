@@ -3,15 +3,16 @@
          xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.myorg</groupId>
+    <groupId>com.rmatthew</groupId>
     <artifactId>cdk</artifactId>
     <version>0.1</version>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <cdk.version>2.66.1</cdk.version>
         <constructs.version>[10.0.0,11.0.0)</constructs.version>
-        <junit.version>5.7.1</junit.version>
+        <junit.version>5.9.2</junit.version>
+        <passay.version>1.6.2</passay.version>
+        <cdk-constructs.version>0.1.13</cdk-constructs.version>
     </properties>
 
     <build>
@@ -29,26 +30,32 @@
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>exec-maven-plugin</artifactId>
-                <version>3.0.0</version>
-                <configuration>
-                    <mainClass>com.myorg.CdkApp</mainClass>
-                </configuration>
+                <version>3.1.0</version>
+<!--                <configuration>-->
+<!--                    <mainClass>CdkApp</mainClass>-->
+<!--                </configuration>-->
             </plugin>
         </plugins>
     </build>
 
     <dependencies>
         <!-- AWS Cloud Development Kit -->
+<!--        <dependency>-->
+<!--            <groupId>software.amazon.awscdk</groupId>-->
+<!--            <artifactId>aws-cdk-lib</artifactId>-->
+<!--            <version>${cdk.version}</version>-->
+<!--        </dependency>-->
+
         <dependency>
-            <groupId>software.amazon.awscdk</groupId>
-            <artifactId>aws-cdk-lib</artifactId>
-            <version>${cdk.version}</version>
+            <groupId>org.passay</groupId>
+            <artifactId>passay</artifactId>
+            <version>${passay.version}</version>
         </dependency>
 
         <dependency>
-            <groupId>software.constructs</groupId>
-            <artifactId>constructs</artifactId>
-            <version>${constructs.version}</version>
+            <groupId>dev.stratospheric</groupId>
+            <artifactId>cdk-constructs</artifactId>
+            <version>${cdk-constructs.version}</version>
         </dependency>
 
         <dependency>
